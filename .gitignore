@@ -1,9 +1,10 @@
 ### Java template
 
 #add
-*.idea
+.idea
 java_coding_test.iml
 *.xml
+workspace.xml
 out
 test_Code.java
 
@@ -94,3 +95,4 @@ local.properties
 # Typically, this file would be tracked if it contains build/dependency configurations:
 #.project
 
+java_coding_test\
