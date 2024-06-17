@@ -17,9 +17,9 @@ public class Summing_Numbers {
         }
 
         System.out.println(first);
-        
+
         String second = sc.next();  // next() 공백을 제거
-                                    // 1234 5678입력시 1234만 입력
+        // 1234 5678입력시 1234만 입력
         if(!(second.length() == first)){
             System.out.println("길이가 맞지 않습니다");
             return;
@@ -29,7 +29,7 @@ public class Summing_Numbers {
 
 
         for(int i=0; i< second.length(); i++){
-               sum += second.charAt(i)-'0'; // char 정수로 -'0'
+            sum += second.charAt(i)-'0'; // char 정수로 -'0'
         }
 
         System.out.println(sum);
