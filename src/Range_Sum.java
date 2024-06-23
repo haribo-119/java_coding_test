@@ -1,9 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.Buffer;
-import java.util.Arrays;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
 /*
@@ -12,7 +9,7 @@ import java.util.StringTokenizer;
 * 구해야 하는 구간 i와 j가 주어진다.
 */
 
-// 제한 시간 0.5초
+// 제한 시간 0.5초  백준 - 11659번
 public class Range_Sum {
     public static void main(String[] args) throws IOException {
 
