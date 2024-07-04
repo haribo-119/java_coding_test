@@ -1,3 +1,5 @@
+package Baekjoon;
+
 public class MergeSort {
 
     // 합병 정렬 메서드

@@ -1,3 +1,5 @@
+package Baekjoon;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,31 +16,31 @@ public class Range_Sum2 {
 
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int N = Integer.parseInt(st.nextToken()); //4
+        int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
 
-        int A[][] = new int[N+1][N+1]; //5 5
-        for(int i=1; i<=N; i++){ // 1 2 3 4
+        int A[][] = new int[N+1][N+1];
+        for(int i=1; i<=N; i++){
             st = new StringTokenizer(br.readLine());
-        for(int j=1; j<=N; j++){ // 1 2 3 4
+        for(int j=1; j<=N; j++){
             A[i][j] = Integer.parseInt(st.nextToken());
         }
         }
 
-//        int A[][] = new int[N+1][N+1]; //5 5
-        for(int i=1; i<=N; i++){ //0 1 2 3 4
+//        int A[][] = new int[N+1][N+1];
+        for(int i=1; i<=N; i++){
             System.out.println();
-            for(int j=1; j<=N; j++){ // 1 2 3 4
+            for(int j=1; j<=N; j++){
                 System.out.print(A[i][j]);
             }
         }
 
 
-        int D[][] = new int[N+1][N+1]; //  2 2
+        int D[][] = new int[N+1][N+1];
         for(int i=1; i<=N; i++){
             for(int j=1; j<=N; j++){
                 // 구간 합 구하기
-                D[i][j] =D[i][j-1] + D[i-1][j] - D[i-1][j-1] + A[i][j];// 00
+                D[i][j] =D[i][j-1] + D[i-1][j] - D[i-1][j-1] + A[i][j];
             }
         }
 
